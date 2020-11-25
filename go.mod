@@ -1,4 +1,4 @@
-module github.com/fluxcd/flux
+module github.com/KubeOperator/flux
 
 go 1.15
 
@@ -26,7 +26,6 @@ replace (
 )
 
 // github.com/fluxcd/flux/pkg/install lives in this very repository, so use that
-replace github.com/fluxcd/flux/pkg/install => ./pkg/install
 
 require (
 	github.com/Jeffail/gabs v1.4.0
@@ -36,7 +35,6 @@ require (
 	github.com/cheggaaa/pb/v3 v3.0.2
 	github.com/docker/distribution v2.7.1+incompatible
 	github.com/evanphx/json-patch v4.5.0+incompatible
-	github.com/fluxcd/flux/pkg/install v0.0.0-00010101000000-000000000000
 	github.com/fluxcd/helm-operator v1.0.0-rc6
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-kit/kit v0.9.0
